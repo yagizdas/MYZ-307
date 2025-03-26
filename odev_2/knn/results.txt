@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 8 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     labor-neg-data
+Instances:    57
+Attributes:   17
+              duration
+              wage-increase-first-year
+              wage-increase-second-year
+              wage-increase-third-year
+              cost-of-living-adjustment
+              working-hours
+              pension
+              standby-pay
+              shift-differential
+              education-allowance
+              statutory-holidays
+              vacation
+              longterm-disability-assistance
+              contribution-to-dental-plan
+              bereavement-assistance
+              contribution-to-health-plan
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 8 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          51               89.4737 %
+Kappa statistic                          0.7741
+Mean absolute error                      0.2381
+Root mean squared error                  0.3127
+Relative absolute error                 52.0539 %
+Root relative squared error             65.4946 %
+Total Number of Instances               57     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,900    0,108    0,818      0,900    0,857      0,776    0,939     0,889     bad
+                 0,892    0,100    0,943      0,892    0,917      0,776    0,939     0,956     good
+Weighted Avg.    0,895    0,103    0,899      0,895    0,896      0,776    0,939     0,932     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 18  2 |  a = bad
+  4 33 |  b = good

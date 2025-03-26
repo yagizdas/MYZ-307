@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 1000 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     vote
+Instances:    435
+Attributes:   17
+              handicapped-infants
+              water-project-cost-sharing
+              adoption-of-the-budget-resolution
+              physician-fee-freeze
+              el-salvador-aid
+              religious-groups-in-schools
+              anti-satellite-test-ban
+              aid-to-nicaraguan-contras
+              mx-missile
+              immigration
+              synfuels-corporation-cutback
+              education-spending
+              superfund-right-to-sue
+              crime
+              duty-free-exports
+              export-administration-act-south-africa
+              Class
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 1510.0
+
+Initial starting points (random):
+
+Cluster 0: n,n,y,y,y,y,n,n,y,n,n,n,y,y,y,y,democrat
+Cluster 1: n,n,y,n,y,n,y,y,y,n,n,n,n,y,n,y,democrat
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                      Cluster#
+Attribute                                 Full Data          0          1
+                                            (435.0)    (214.0)    (221.0)
+=========================================================================
+handicapped-infants                               n          n          y
+water-project-cost-sharing                        y          y          n
+adoption-of-the-budget-resolution                 y          n          y
+physician-fee-freeze                              n          y          n
+el-salvador-aid                                   y          y          n
+religious-groups-in-schools                       y          y          n
+anti-satellite-test-ban                           y          n          y
+aid-to-nicaraguan-contras                         y          n          y
+mx-missile                                        y          n          y
+immigration                                       y          y          y
+synfuels-corporation-cutback                      n          n          n
+education-spending                                n          y          n
+superfund-right-to-sue                            y          y          n
+crime                                             y          y          n
+duty-free-exports                                 n          n          y
+export-administration-act-south-africa            y          y          y
+Class                                      democrat republican   democrat
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      214 ( 49%)
+1      221 ( 51%)
+
